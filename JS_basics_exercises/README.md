@@ -26,7 +26,7 @@ const checkSchoolNameLength = schoolName.length > 4 || schoolName.length < 5;
 console.log(checkSchoolNameLength); //output: true b/c schoolName.length > 4
 ```
 
-### Ternary Operator
+### `condition ? if true : if false` Ternary Operator
 
 - Checks a condition before the `?` operator
 - If the condition is true, it executes the block before the `:`

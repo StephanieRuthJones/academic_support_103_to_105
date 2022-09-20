@@ -26,7 +26,7 @@ const checkSchoolNameLength = schoolName.length > 4 || schoolName.length < 5;
 console.log(checkSchoolNameLength); //output: true b/c schoolName.length > 4
 ```
 
-### `condition ? if true : if false` Ternary Operator
+### `condition ? execute if true : execute if false` Ternary Operator
 
 - Checks a condition before the `?` operator
 - If the condition is true, it executes the block before the `:`
@@ -99,4 +99,18 @@ Values evaluate to true or false when evaluated as Booleans.
 console.log(0); //outputs 0
 console.log(!!0); //outputs false bc 0 is falsy, then the double bang turns it into a boolean
 console.log(!!1); //outputs true because 1 is truthy, then double bang turns it into a boolean
+```
+
+## `==` and `===` Comparison Operators
+
+`==` Checks the equality of two operands **without considering their type**
+
+```
+"4" == 4 //output: true because value is the same when types (string and number) are ignored
+```
+
+`===` Checks equality of two operands **with their types**
+
+```
+"4" === 4 //output: false because values are different when types (string and number) are accounted for
 ```

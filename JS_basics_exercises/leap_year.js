@@ -16,8 +16,8 @@
 // }
 
 //CHALLENGE: Refactor your leapYear function to use a ternary
-const leapYear = (year) =>
-  year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+// const leapYear = (year) =>
+//   year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
 
 console.log("2016", leapYear(2016)); //should return true
 console.log("2000", leapYear(2000)); //should return true

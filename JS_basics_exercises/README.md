@@ -1,12 +1,12 @@
 # JS Basics
 
-## How to Run JS Files
+# How to Run JS Files
 
 Run JS files from the project's root directory with the command `node JS_basics_exercises/[file_name]`
 
-## 1. Leap Year - `1_leap_year.js`
+# 1. Leap Year - `1_leap_year.js`
 
-Navigate to the `1_leap_year.js` file to answer the questions below.
+Navigate to the `1_leap_year.js` file to complete this exercise.
 
 Write a function called `leapYear` that takes in a year and has an **if statement** that returns `true` if the year is a leap year and `false` if the year is not a leap year
 
@@ -16,7 +16,28 @@ Write a function called `leapYear` that takes in a year and has an **if statemen
 
 **Additional Challenge:** Refactor your function to implement a **ternary** in place of your `if` statement.
 
-## 2. Equals - `2_equals.js`
+#### `condition ? execute if true : execute if false` Ternary Operator Notes
+
+- Checks a condition before the `?` operator
+- If the condition is true, it executes the block before the `:`
+- If the condition is false, it executes the block after the `:`
+
+```
+const number = 6;
+const isADozen = number > 12 ? "Is more than a dozen" : "Is less than a dozen";
+console.log(isADozen); //output: "Is less than a dozen"
+```
+
+#### `%` Modulo (Remainder) Operator Notes
+
+Returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
+
+```
+13 % 5 //output: 3 b/c 5 goes into 13 two times with a remainder of 3
+12 % 6 //output: 0 b/c 6 goes into 12 without any remainder
+```
+
+# 2. Equals - `2_equals.js`
 
 Navigate to the `2_equals.js` file to answer the questions below.
 
@@ -38,7 +59,7 @@ ii. What value can you provide the `strictlyEquals` function so that it returns 
 "4" === 4 //output: false because values are different when types (string and number) are accounted for
 ```
 
-## 3. `&&` AND Operator - `3_and_operator.js`
+# 3. `&&` AND Operator - `3_and_operator.js`
 
 Navigate to the `3_and_operator.js` file to complete this exercise.
 
@@ -55,7 +76,7 @@ const checkAddition = 1 + 1 === 2 && 1 + 3 === 2;
 console.log(checkAddition); //false b/c 1 + 3 does not equal 3
 ```
 
-## 4. `||` OR Operator - `4_or_operator.js`
+# 4. `||` OR Operator - `4_or_operator.js`
 
 Navigate to the `4_or_operator.js` file to complete this exercise.
 
@@ -73,7 +94,7 @@ const checkSchoolNameLength = schoolName.length > 4 || schoolName.length < 5;
 console.log(checkSchoolNameLength); //output: true b/c schoolName.length > 4
 ```
 
-## 5. Truthy and Falsy - `5_truthy_falsy.js`
+# 5. Truthy and Falsy - `5_truthy_falsy.js`
 
 Navigate to the `5_truthy_falsy.js` file to answer the questions below.
 
@@ -102,21 +123,7 @@ console.log(!!0); //outputs false bc 0 is falsy, then the double bang turns it i
 console.log(!!1); //outputs true because 1 is truthy, then double bang turns it into a boolean
 ```
 
-## `!` NOT Operator
-
-Navigate to the `3_not_operator.js` file to answer the questions below.
-
-### `!` NOT Operator Instructions
-
-Answer the following questions:
-
-1. What will the `checkTruthiness` function return if `0` is passed as an argument? Why?
-2. What will the `checkTruthiness` function return if `1` is passed as an argument? Why?
-3. What will the `checkTruthiness` function return if an empty string is passed as an argument? Why?
-4. What will the `checkTruthiness` function return if `a string` is passed as an argument? Why?
-5. What will the `checkTruthiness` function return if `newVariable` is passed as an argument? Why?
-
-### `!` NOT Operator Notes
+#### `!` NOT Operator Notes
 
 - Inverts a boolean
 - Inverts truthiness of non-boolean
@@ -135,59 +142,13 @@ const isStringEmpty = !string.length;
 console.log("isStringEmpty", isStringEmpty); //outputs false b/c the value of string.length is truthy and when the ! operator is added, it turns that into the opposite which is false
 ```
 
-------NEED TO OMIT OR EDIT BELOW ----
+# 6. Switch Statement - `5_switch_statement.js`
 
-## Operators
+Navigate to the `5_switch_statement.js` file to complete this exercise.
 
-Answer the questions in each section.
+Write a function called `printDadJoke` that takes in a number argument called `levelOfCorny` from `1` to `3`. Implement a switch statement to return a dad joke based on the `levelOfCorny` provided:
 
-### `!` NOT Operator
-
-- Inverts a boolean
-- Inverts truthiness of non-boolean
-
-```
-const didHomework = true;
-const didNotDoHomework = !didHomework;
-console.log(didNotDoHomework); //false b/c ! inverts value of didHomework
-```
-
-```
-const string = "Stephanie";
-const stringLength = string.length;
-console.log("stringLength", stringLength); //outputs 9
-const isStringEmpty = !string.length;
-console.log("isStringEmpty", isStringEmpty); //outputs false b/c the value of string.length is truthy and when the ! operator is added, it turns that into the opposite which is false
-```
-
-### `condition ? execute if true : execute if false` Ternary Operator
-
-- Checks a condition before the `?` operator
-- If the condition is true, it executes the block before the `:`
-- If the condition is false, it executes the block after the `:`
-
-```
-const number = 6;
-const isADozen = number > 12 ? "Is more than a dozen" : "Is less than a dozen";
-console.log(isADozen); //output: "Is less than a dozen"
-```
-
-### `%` Modulo (Remainder) Operator
-
-Returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
-
-```
-13 % 5 //output: 3 b/c 5 goes into 13 two times with a remainder of 3
-12 % 6 //output: 0 b/c 6 goes into 12 without any remainder
-```
-
-## Comparison Operators
-
-Compare two values and return true or false
-
-`===` strict equal
-`!==` strict not equal
-`>` greater than
-`>=` greater than or equal
-`<` less than
-`<=` less than or equal
+- If `levelOfCorny` is `1`, return `"I'm afraid for the calendar. Its days are numbered."`
+- If `levelOfCorny` is `2`, return `"What do a tick and the Eiffel Tower have in common?" "They're both Paris sites."`
+- If `levelOfCorny` is `3`, return `"I thought the dryer was shrinking my clothes. Turns out it was the refrigerator all along."`
+- If `levelOfCorny` is not 1-3, return `"No dad would ever make a joke that corny!"`

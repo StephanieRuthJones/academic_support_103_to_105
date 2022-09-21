@@ -1,23 +1,18 @@
 # JS Basics
 
+## How to Run JS Files
+
+Run JS files from the project's root directory with the command `node JS_basics_exercises/[file_name]`
+
 ## Leap Year
 
 Write a function called leapYear that takes in a year and has an **if statement** that returns true if the year is a leap year and false if the year is not a leap year
 
-> ℹ️ NOTE: Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these centurial years are leap years if they are exactly divisible by 400.
+> ℹ️ **NOTE:** Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these centurial years are leap years if they are exactly divisible by 400.
+>
 > For example, the years 1700, 1800, and 1900 are not leap years, but the year 2000 is.
 
-## Control Flow
-
-The order in which statements are executed in a program.
-
-### Default Control Flow
-
-Statements are read and executed from left-to-right, top-to-bottom in a file.
-
-### Control Structures
-
-Alter control flow by executing code only if specific conditions are met - e.g., `if()` statments.
+**Additional Challenge:** Refactor your function to implement a **ternary** in place of your if statement.
 
 ## Operators
 

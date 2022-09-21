@@ -16,7 +16,7 @@
 
 3. Write a function that takes in an array of family members and returns a new array of people who are 18 or older and whose name starts with the letter "S"
 
-# 2. reduce - `2_reduce.js`
+# 3. reduce - `3_reduce.js`
 
 1. Use reduce to sum the numbers in the numbers array.
 2. Use reduce to multiply the numbers in the numbers array.

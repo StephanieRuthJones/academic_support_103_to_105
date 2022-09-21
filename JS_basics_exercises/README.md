@@ -16,7 +16,64 @@ Write a function called leapYear that takes in a year and has an **if statement*
 
 ## Operators
 
-### `||` OR Operator
+Navigate to the `operators.js` file to answer the questions below.
+
+### `==` and `===` Comparison Operators Instructions
+
+What two values can you provide the `looselyEquals` function so that it returns `true`?
+
+#### `==` and `===` Comparison Operators Notes
+
+`==` Checks the equality of two operands **without considering their type**
+
+```
+"4" == 4 //output: true because value is the same when types (string and number) are ignored
+```
+
+`===` Checks equality of two operands **with their types**
+
+```
+"4" === 4 //output: false because values are different when types (string and number) are accounted for
+```
+
+### `!` NOT Operator Instructions
+
+Answer the following questions:
+
+1. What will the `checkTruthiness` function return if `0` is passed as an argument? Why?
+2. What will the `checkTruthiness` function return if `1` is passed as an argument? Why?
+3. What will the `checkTruthiness` function return if an empty string is passed as an argument? Why?
+4. What will the `checkTruthiness` function return if `a string` is passed as an argument? Why?
+5. What will the `checkTruthiness` function return if `newVariable` is passed as an argument? Why?
+
+### `!` NOT Operator Notes
+
+- Inverts a boolean
+- Inverts truthiness of non-boolean
+
+```
+const didHomework = true;
+const didNotDoHomework = !didHomework;
+console.log(didNotDoHomework); //false b/c ! inverts value of didHomework
+```
+
+```
+const string = "Stephanie";
+const stringLength = string.length;
+console.log("stringLength", stringLength); //outputs 9
+const isStringEmpty = !string.length;
+console.log("isStringEmpty", isStringEmpty); //outputs false b/c the value of string.length is truthy and when the ! operator is added, it turns that into the opposite which is false
+```
+
+------NEED TO OMIT OR EDIT BELOW ----
+
+## Operators
+
+Answer the questions in each section.
+
+### `||` OR Operator Instructions
+
+#### `||` OR Operator Description
 
 - Checks two values
 - If one or both values are true or truthy, returns true
@@ -26,6 +83,25 @@ Write a function called leapYear that takes in a year and has an **if statement*
 const schoolName = "Masterschool";
 const checkSchoolNameLength = schoolName.length > 4 || schoolName.length < 5;
 console.log(checkSchoolNameLength); //output: true b/c schoolName.length > 4
+```
+
+### `!` NOT Operator
+
+- Inverts a boolean
+- Inverts truthiness of non-boolean
+
+```
+const didHomework = true;
+const didNotDoHomework = !didHomework;
+console.log(didNotDoHomework); //false b/c ! inverts value of didHomework
+```
+
+```
+const string = "Stephanie";
+const stringLength = string.length;
+console.log("stringLength", stringLength); //outputs 9
+const isStringEmpty = !string.length;
+console.log("isStringEmpty", isStringEmpty); //outputs false b/c the value of string.length is truthy and when the ! operator is added, it turns that into the opposite which is false
 ```
 
 ### `condition ? execute if true : execute if false` Ternary Operator
@@ -60,25 +136,6 @@ const checkAddition = 1 + 1 === 2 && 1 + 3 === 2;
 console.log(checkAddition); //false b/c 1 + 3 does not equal 3
 ```
 
-### `!` NOT Operator
-
-- Inverts a boolean
-- Inverts truthiness of non-boolean
-
-```
-const didHomework = true;
-const didNotDoHomework = !didHomework;
-console.log(didNotDoHomework); //false b/c ! inverts value of didHomework
-```
-
-```
-const string = "Stephanie";
-const stringLength = string.length;
-console.log("stringLength", stringLength); //outputs 9
-const isStringEmpty = !string.length;
-console.log("isStringEmpty", isStringEmpty); //outputs false b/c the value of string.length is truthy and when the ! operator is added, it turns that into the opposite which is false
-```
-
 ## Comparison Operators
 
 Compare two values and return true or false
@@ -101,18 +158,4 @@ Values evaluate to true or false when evaluated as Booleans.
 console.log(0); //outputs 0
 console.log(!!0); //outputs false bc 0 is falsy, then the double bang turns it into a boolean
 console.log(!!1); //outputs true because 1 is truthy, then double bang turns it into a boolean
-```
-
-## `==` and `===` Comparison Operators
-
-`==` Checks the equality of two operands **without considering their type**
-
-```
-"4" == 4 //output: true because value is the same when types (string and number) are ignored
-```
-
-`===` Checks equality of two operands **with their types**
-
-```
-"4" === 4 //output: false because values are different when types (string and number) are accounted for
 ```

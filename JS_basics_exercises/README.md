@@ -4,7 +4,9 @@
 
 Run JS files from the project's root directory with the command `node JS_basics_exercises/[file_name]`
 
-## Leap Year
+## 1. Leap Year - `1_leap_year.js`
+
+Navigate to the `1_leap_year.js` file to answer the questions below.
 
 Write a function called `leapYear` that takes in a year and has an **if statement** that returns `true` if the year is a leap year and `false` if the year is not a leap year
 
@@ -14,13 +16,15 @@ Write a function called `leapYear` that takes in a year and has an **if statemen
 
 **Additional Challenge:** Refactor your function to implement a **ternary** in place of your `if` statement.
 
-## Operators
+## 2. Equals - `2_equals.js`
 
-Navigate to the `operators.js` file to answer the questions below.
+Navigate to the `2_equals.js` file to answer the questions below.
 
 ### `==` and `===` Comparison Operators Instructions
 
 What two values can you provide the `looselyEquals` function so that it returns `true`?
+
+What value can you provide the `strictlyEquals` function so that it returns `true`?
 
 #### `==` and `===` Comparison Operators Notes
 
@@ -35,6 +39,10 @@ What two values can you provide the `looselyEquals` function so that it returns 
 ```
 "4" === 4 //output: false because values are different when types (string and number) are accounted for
 ```
+
+## `!` NOT Operator
+
+Navigate to the `3_not_operator.js` file to answer the questions below.
 
 ### `!` NOT Operator Instructions
 

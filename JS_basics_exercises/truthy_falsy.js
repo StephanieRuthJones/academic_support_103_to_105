@@ -1,4 +1,4 @@
-// == operator
+// ***** == and === Comparison Operators ***** //
 function looselyEquals(value) {
   return value == 11;
 }
@@ -18,7 +18,7 @@ function strictlyEquals(value) {
 //for strictlyEquals to return true ?
 // console.log(strictlyEquals(11));
 
-//Truthiness
+// ***** == and === Comparison Operators ***** //
 let newVariable;
 function checkTruthiness(value) {
   return !!value;

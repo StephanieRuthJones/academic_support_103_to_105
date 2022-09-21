@@ -1,6 +1,4 @@
 // OR OPERATOR
-//Write a function called howLong that uses the OR operator to return true
-//if a string's length is greater than 10 or less than 5
 function howLong(string) {
   return string.length > 10 || string.length < 5;
 }

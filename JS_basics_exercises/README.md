@@ -20,11 +20,9 @@ Write a function called `leapYear` that takes in a year and has an **if statemen
 
 Navigate to the `2_equals.js` file to answer the questions below.
 
-### `==` and `===` Comparison Operators Instructions
+i. What two values can you provide the `looselyEquals` function so that it returns `true`?
 
-What two values can you provide the `looselyEquals` function so that it returns `true`?
-
-What value can you provide the `strictlyEquals` function so that it returns `true`?
+ii. What value can you provide the `strictlyEquals` function so that it returns `true`?
 
 #### `==` and `===` Comparison Operators Notes
 
@@ -42,9 +40,7 @@ What value can you provide the `strictlyEquals` function so that it returns `tru
 
 ## 3. `&&` AND Operator - `3_and_operator.js`
 
-Navigate to the `3_and_operator.js` file to answer the questions below.
-
-### `&&` AND Operator Instructions
+Navigate to the `3_and_operator.js` file to complete this exercise.
 
 Write a function called `isADog` that takes in two arguments: `animalSound` and `wantsTreats`. The `isADog` function implements the `&&` operator to return `true` if the `animalSound` is equal to the string `woof` and `wantsTreats` is `true`. It returns `false` if the `animalSound` is NOT equal to the string `woof` OR if `wantsTreats` is `false`
 
@@ -57,6 +53,53 @@ Write a function called `isADog` that takes in two arguments: `animalSound` and 
 ```
 const checkAddition = 1 + 1 === 2 && 1 + 3 === 2;
 console.log(checkAddition); //false b/c 1 + 3 does not equal 3
+```
+
+## 4. `||` OR Operator - `4_or_operator.js`
+
+Navigate to the `4_or_operator.js` file to complete this exercise.
+
+Write a function called `howLong` that uses the **OR operator** to return `true` if a string's length is greater than `10` or less than `5`
+
+#### `||` OR Operator Notes
+
+- Checks two values
+- If one or both values are true or truthy, returns true
+- If both values are false or falsy, returns false
+
+```
+const schoolName = "Masterschool";
+const checkSchoolNameLength = schoolName.length > 4 || schoolName.length < 5;
+console.log(checkSchoolNameLength); //output: true b/c schoolName.length > 4
+```
+
+## 5. Truthy and Falsy - `5_truthy_falsy.js`
+
+Navigate to the `5_truthy_falsy.js` file to answer the questions below.
+
+i. If you provide `0` as an input to the `checkTruthiness` function, what is the output? Why?
+
+ii. If you provide `1` as an input to the `checkTruthiness` function, what is the output? Why?
+
+iii. If you provide an empty string as an input to the `checkTruthiness` function, what is the output? Why?
+
+iv. If you provide `some string` as an input to the `checkTruthiness` function, what is the output? Why?
+
+v. If you provide `NaN` as an input to the `checkTruthiness` function, what is the output? Why?
+
+vi. If you provide `newVariable` as an input to the `checkTruthiness` function, what is the output? Why?
+
+#### Truthy and Falsy Notes
+
+Values evaluate to true or false when evaluated as Booleans.
+
+- Falsy: values that evaluate to false - e.g., `""`, `null`, `undefined`, `0`, `NaN`
+- Truthy: values that evaluate to true
+
+```
+console.log(0); //outputs 0
+console.log(!!0); //outputs false bc 0 is falsy, then the double bang turns it into a boolean
+console.log(!!1); //outputs true because 1 is truthy, then double bang turns it into a boolean
 ```
 
 ## `!` NOT Operator
@@ -98,20 +141,6 @@ console.log("isStringEmpty", isStringEmpty); //outputs false b/c the value of st
 
 Answer the questions in each section.
 
-### `||` OR Operator Instructions
-
-#### `||` OR Operator Description
-
-- Checks two values
-- If one or both values are true or truthy, returns true
-- If both values are false or falsy, returns false
-
-```
-const schoolName = "Masterschool";
-const checkSchoolNameLength = schoolName.length > 4 || schoolName.length < 5;
-console.log(checkSchoolNameLength); //output: true b/c schoolName.length > 4
-```
-
 ### `!` NOT Operator
 
 - Inverts a boolean
@@ -152,17 +181,6 @@ Returns the remainder left over when one operand is divided by a second operand.
 12 % 6 //output: 0 b/c 6 goes into 12 without any remainder
 ```
 
-### `&&` AND Operator
-
-- Checks 2 values and returns a boolean
-- If both values are true or truthy, returns true
-- If one or both of the values is false or falsy, returns false
-
-```
-const checkAddition = 1 + 1 === 2 && 1 + 3 === 2;
-console.log(checkAddition); //false b/c 1 + 3 does not equal 3
-```
-
 ## Comparison Operators
 
 Compare two values and return true or false
@@ -173,16 +191,3 @@ Compare two values and return true or false
 `>=` greater than or equal
 `<` less than
 `<=` less than or equal
-
-## Truthy and Falsy
-
-Values evaluate to true or false when evaluated as Booleans.
-
-- Falsy: values that evaluate to false - e.g., `""`, `null`, `undefined`, `0`, `NaN`
-- Truthy: values that evaluate to true
-
-```
-console.log(0); //outputs 0
-console.log(!!0); //outputs false bc 0 is falsy, then the double bang turns it into a boolean
-console.log(!!1); //outputs true because 1 is truthy, then double bang turns it into a boolean
-```

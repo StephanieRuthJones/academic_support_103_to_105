@@ -1,6 +1,4 @@
 //AND OPERATOR
-//Write a function called isADog that takes in two arguments: animalSound and wantsTreats
-//isADog returns true if the animalSound is equal to "woof" and wantsTreats is true
 function isADog(animalSound, wantsTreats) {
   return animalSound.toLowerCase() === "woof" && wantsTreats;
 }

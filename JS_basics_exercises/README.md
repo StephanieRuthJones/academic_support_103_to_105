@@ -40,6 +40,25 @@ What value can you provide the `strictlyEquals` function so that it returns `tru
 "4" === 4 //output: false because values are different when types (string and number) are accounted for
 ```
 
+## 3. `&&` AND Operator - `3_and_operator.js`
+
+Navigate to the `3_and_operator.js` file to answer the questions below.
+
+### `&&` AND Operator Instructions
+
+Write a function called `isADog` that takes in two arguments: `animalSound` and `wantsTreats`. The `isADog` function implements the `&&` operator to return `true` if the `animalSound` is equal to the string `woof` and `wantsTreats` is `true`. It returns `false` if the `animalSound` is NOT equal to the string `woof` OR if `wantsTreats` is `false`
+
+#### `&&` AND Operator Notes
+
+- Checks 2 values and returns a boolean
+- If both values are true or truthy, returns true
+- If one or both of the values is false or falsy, returns false
+
+```
+const checkAddition = 1 + 1 === 2 && 1 + 3 === 2;
+console.log(checkAddition); //false b/c 1 + 3 does not equal 3
+```
+
 ## `!` NOT Operator
 
 Navigate to the `3_not_operator.js` file to answer the questions below.
